@@ -12,6 +12,7 @@ function Navbar() {
                 <IkImage source={"logo.png"} alt="Lemon logo" className={"w-8 h-8"} />
                 <span>Lemon Blog</span>
             </div>
+
             {/* MOBILE MENU */}
             <div className="md:hidden">
                 {/* MOBILE BUTTON */}
@@ -32,6 +33,7 @@ function Navbar() {
                     </a>
                 </div>
             </div>
+            
             {/* DESKTOP MENU */}
             <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
                 <a href="/">Home</a>
