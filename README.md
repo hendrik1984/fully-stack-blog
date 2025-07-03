@@ -20,3 +20,6 @@ https://imagekit.io/dashboard/media-library
 
 # React router
 https://reactrouter.com/home
+
+# Clerk Auth
+https://clerk.com/
