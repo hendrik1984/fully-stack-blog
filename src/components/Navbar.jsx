@@ -1,5 +1,6 @@
 import { useState } from "react";
 import IkImage from "./Image";
+import { Link } from "react-router";
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -7,11 +8,11 @@ function Navbar() {
     return (
         <div className="w-full h-16 md:h-20 flex items-center justify-between">
             {/* LOGO */}
-            <div className="flex items-center gap-4 text-2xl font-bold">
+            <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
                 {/* <Image path="/logo.png" className="w-8 h-8" alt="" /> */}
                 <IkImage source={"logo.png"} alt="Lemon logo" className={"w-8 h-8"} />
                 <span>Lemon Blog</span>
-            </div>
+            </Link>
 
             {/* MOBILE MENU */}
             <div className="md:hidden">
@@ -24,25 +25,25 @@ function Navbar() {
                 </div>
                 {/* MOBILE LINK LIST */}
                 <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
-                    <a href="/">Home</a>
-                    <a href="/">Trending</a>
-                    <a href="/">Most Popular</a>
-                    <a href="/">About</a>
-                    <a href="/">
+                    <Link href="/">Home</Link>
+                    <Link href="/">Trending</Link>
+                    <Link href="/">Most Popular</Link>
+                    <Link href="/">About</Link>
+                    <Link href="Link">
                         <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login 👋</button>
-                    </a>
+                    </Link>
                 </div>
             </div>
             
             {/* DESKTOP MENU */}
             <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
-                <a href="/">Home</a>
-                <a href="/">Trending</a>
-                <a href="/">Most Popular</a>
-                <a href="/">About</a>
-                <a href="/">
+                <Link href="/">Home</Link>
+                <Link href="/">Trending</Link>
+                <Link href="/">Most Popular</Link>
+                <Link href="/">About</Link>
+                <Link href="/">
                     <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login 👋</button>
-                </a>
+                </Link>
             </div>
         </div>
     );
