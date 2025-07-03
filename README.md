@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # fully-stack-blog
 source tutorial: https://www.youtube.com/watch?v=Pfy3q6PbbRA
-now: 48:00
+now: 55:00
 
 # media source
 https://imagekit.io/dashboard/media-library
